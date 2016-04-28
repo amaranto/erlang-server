@@ -30,3 +30,5 @@ get_users ( ) -> server ! { get_users, ?MODULE }.
 del_user ( Name ) -> server ! { del_user, Name, ?MODULE }.
 send_to ( Name, Msg ) -> server ! { sms, Name, Msg, self() }.
 bye() -> server ! { del_user, ?MODULE, ?MODULE }.
+
+% homework
